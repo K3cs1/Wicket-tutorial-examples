@@ -54,6 +54,12 @@
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>7.0.5.Final</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.el</groupId>
+					<artifactId>javax.el-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -68,7 +74,7 @@
 		<dependency>
 		    <groupId>jakarta.validation</groupId>
 		    <artifactId>jakarta.validation-api</artifactId>
-		    <version>3.0.2</version>
+		    <version>3.1.0</version>
 		</dependency>
 
 		<!-- JUNIT DEPENDENCY FOR TESTING -->
